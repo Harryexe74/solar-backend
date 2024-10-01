@@ -1,5 +1,5 @@
-import config from "./config/index.js";
-import connectDB from "./config/db.js";
+// import config from "./config/index.js";
+// import connectDB from "./config/db.js";
 import express from "express"
 
 const app =express()
@@ -11,7 +11,7 @@ app.get("/",(req,res)=>{
 })
 connectDB();
 
-const port = config.port || 4000;
+const port = process.env.port || 4000;
 
 
 app.listen(port, () => {

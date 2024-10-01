@@ -1,13 +1,11 @@
-import config from "./config/index.js";
-import connectDB from "./config/db.js";
+import express from 'express';
 
-import app from "./app.js";
+const app = express();
 
-connectDB();
-
-const port = config.port || 4000;
-
-app.listen(port, () => {
-	console.log(`Server is listening on port ${port}`);
+// Your middleware and routes here
+app.get('/', (req, res) => {
+  res.send('Hello from Express');
 });
+
+export default app;
 

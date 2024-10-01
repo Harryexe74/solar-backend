@@ -15,7 +15,7 @@ import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import oderRoutes from "./routes/orderRoutes.js";
 import subscriber from "./routes/subscriberRoutes.js";
-import { sendErrorResponse } from "./utils/responseHandler.js";
+// import { sendErrorResponse } from "./utils/responseHandler.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 

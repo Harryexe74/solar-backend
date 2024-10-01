@@ -1,19 +1,11 @@
-// import config from "./config/index.js";
-// import connectDB from "./config/db.js";
-import express from "express"
+import express from "express";
 
-const app =express()
-// import app from "./app.js";
+const app = express();
 
-
-app.get("/",(req,res)=>{
-	res.send("Server Live");
-})
-connectDB();
-
-const port = process.env.port || 4000;
-
-
-app.listen(port, () => {
-	console.log(`Server is listening on port ${port}`);
+app.get("/", (req, res) => {
+  res.send("Server is Live");
 });
+
+app.listen(3000,()=>{
+	console.log("serve is running")
+})
